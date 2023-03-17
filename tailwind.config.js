@@ -3,6 +3,7 @@ module.exports = {
     './pages/**/*.vue',
     './components/**/*.vue'
   ],
+  // https://github.com/tailwindlabs/tailwindcss/blob/master/stubs/defaultConfig.stub.js
   theme: {
     'colors': {
       'sidemenu': {
@@ -59,7 +60,11 @@ module.exports = {
     'fontSize': {
       'sm': '0.75rem',
       'base': '1rem',
-      'lg': '1.25rem'
+      'lg': '1.25rem',
+      "headerLogo": "35px",
+    },
+    "fontWeight": {
+      "headerLogo": "Bold",
     },
     'fontFamily': {
       'roboto': 'Roboto'
@@ -73,6 +78,9 @@ module.exports = {
       'sm': '0.3125rem',
       'default': '0.5rem',
       'lg': '5.375rem'
+    },
+    'header': {
+      'height': '80px',
     }
   }
 }
