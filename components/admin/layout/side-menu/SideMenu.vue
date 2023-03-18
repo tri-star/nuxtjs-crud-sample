@@ -16,6 +16,12 @@ type MenuItem = {
 
 const menues: MenuItem[] = [
   {
+    name: "dashboard",
+    title: "ダッシュボード",
+    icon: "dashboard",
+    link: "/admin/dashboard",
+  },
+  {
     name: "contracts",
     title: "契約管理",
     icon: "corporate_fare",
@@ -48,7 +54,7 @@ const menues: MenuItem[] = [
         <li v-for="menu in menues" class="w-full">
           <NuxtLink class="menu-item" :href="menu.link">
             <span class="material-icons">{{ menu.icon }}</span>
-            <p class="whitespace-nowrap w-full" v-show="expanded">{{ menu.title }}</p>
+            <p class="whitespace-nowrap w-full">{{ menu.title }}</p>
           </NuxtLink>
         </li>
       </ul>
@@ -62,7 +68,7 @@ const menues: MenuItem[] = [
 <style scoped>
 .side-menu {
   @apply flex flex-col;
-  transition: width 0.3s;
+  transition: width 0.5s;
 }
 
 .logo-container {
@@ -82,7 +88,7 @@ const menues: MenuItem[] = [
 }
 
 .menu-item {
-  @apply flex gap-2.5 px-3 py-2.5 rounded-sm w-full;
+  @apply flex gap-2.5 px-3.5 py-2.5 rounded-sm w-full;
   transition: background-color 0.5s;
   overflow-x: hidden;
 }
