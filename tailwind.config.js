@@ -62,12 +62,16 @@ module.exports = {
       'base': '1rem',
       'lg': '1.25rem',
       "headerLogo": "35px",
+      "pageTitle": "30px",
+      "sectionTitle": "20px",
     },
     "fontWeight": {
       "headerLogo": "Bold",
+      "pageTitle": "bold",
+      "sectionTitle": "bold",
     },
     'fontFamily': {
-      'roboto': 'Roboto'
+      'default': 'Roboto'
     },
     'boxShadow': {
       'main/section-shadow': '0px 4px 10px -2px rgba(0,0,0,0.25)'

@@ -20,7 +20,8 @@
 }
 
 main {
-  @apply bg-main-bg p-2 h-full;
+  @apply flex flex-col bg-main-bg p-2 h-full;
   padding: 10px;
+  gap: 30px;
 }
 </style>
