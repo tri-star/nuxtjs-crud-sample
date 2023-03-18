@@ -15,7 +15,7 @@ import HeaderIcon from './HeaderIcon.vue';
 
 <style scoped>
 header {
-  @apply bg-header-main text-header-on w-full;
+  @apply bg-header-main text-header-on w-full drop-shadow-md;
   height: theme('header.height');
 }
 

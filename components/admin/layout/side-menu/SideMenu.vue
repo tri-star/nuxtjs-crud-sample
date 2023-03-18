@@ -1,27 +1,11 @@
-<template>
-  <aside class="flex flex-col w-[280px]">
-    <div class="logo-container">
-      <h1 class="logo">ADMIN</h1>
-      <Spacer />
-      <NuxtLink :href="'#'"><span class="material-icons menu-icon">menu</span></NuxtLink>
-
-    </div>
-    <div class="bg-sidemenu-bg text-sidemenu-on h-full p-2.5">
-      <ul class="flex flex-col gap-2.5">
-        <li v-for="menu in menues" class="w-full">
-          <NuxtLink class="menu-item" :href="menu.link">
-            <span class="material-icons">{{ menu.icon }}</span>
-            <p>{{ menu.title }}</p>
-          </NuxtLink>
-        </li>
-      </ul>
-
-    </div>
-
-  </aside>
-</template>
-
 <script setup lang="ts">
+
+const expanded = useState('expanded', () => true)
+
+const handleToggleClick = () => {
+  expanded.value = !expanded.value
+}
+
 
 type MenuItem = {
   name: string,
@@ -45,16 +29,52 @@ const menues: MenuItem[] = [
   }
 
 ]
-
 </script>
 
+
+<template>
+  <aside :class="['side-menu', expanded ? 'w-[280px]' : 'w-[68px]']">
+    <div class="logo-container">
+      <h1 class="logo" v-show="expanded">ADMIN</h1>
+      <Spacer v-show="expanded" />
+      <a class="toggle flex items-center" @click="handleToggleClick()">
+        <span class="material-icons menu-icon">menu</span>
+      </a>
+
+
+    </div>
+    <div class="bg-sidemenu-bg text-sidemenu-on h-full p-2.5">
+      <ul class="flex flex-col gap-2.5">
+        <li v-for="menu in menues" class="w-full">
+          <NuxtLink class="menu-item" :href="menu.link">
+            <span class="material-icons">{{ menu.icon }}</span>
+            <p class="whitespace-nowrap w-full" v-show="expanded">{{ menu.title }}</p>
+          </NuxtLink>
+        </li>
+      </ul>
+
+    </div>
+
+  </aside>
+</template>
+
+
 <style scoped>
+.side-menu {
+  @apply flex flex-col;
+  transition: width 0.3s;
+}
+
 .logo-container {
-  @apply bg-primary-main text-primary-on flex items-center;
+  @apply bg-primary-main text-primary-on flex justify-center items-center;
   font-size: theme('fontSize.headerLogo');
   font-weight: theme('fontWeight.headerLogo');
   height: theme('header.height');
   padding: 10px;
+}
+
+.toggle {
+  cursor: pointer;
 }
 
 .menu-icon {
@@ -64,6 +84,7 @@ const menues: MenuItem[] = [
 .menu-item {
   @apply flex gap-2.5 px-3 py-2.5 rounded-sm w-full;
   transition: background-color 0.5s;
+  overflow-x: hidden;
 }
 
 .menu-item:hover {
