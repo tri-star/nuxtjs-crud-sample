@@ -12,5 +12,6 @@ definePageMeta({
   <PageTitle title="ユーザー管理" />
   <Card>
     <AdminSectionTitle title="検索結果" />
+    <AppButton icon="add" text="登録" color="primary" />
   </Card>
 </template>

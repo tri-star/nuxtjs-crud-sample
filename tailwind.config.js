@@ -15,7 +15,8 @@ module.exports = {
         'on': '#ecf0ff',
         'main-01': '#6776ff',
         'disabled': '#878ec9',
-        'shade03': '#0011a8'
+        'shade03': '#0011a8',
+        'buttonBorder': 'color-mix(in srgb, #5162ff, black 5%)',
       },
       'header': {
         'main': '#a7b0ff',
@@ -74,7 +75,8 @@ module.exports = {
       'default': 'Roboto'
     },
     'boxShadow': {
-      'main/section-shadow': '0px 4px 10px -2px rgba(0,0,0,0.25)'
+      'main/section-shadow': '0px 4px 10px -2px rgba(0,0,0,0.25)',
+      'default': '0px 4px 4px rgba(0,0,0,0.25)',
     },
     'borderRadius': {
       'none': '0',
