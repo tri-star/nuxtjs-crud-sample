@@ -68,7 +68,7 @@ const menues: MenuItem[] = [
 <style scoped>
 .side-menu {
   @apply flex flex-col;
-  transition: width 0.5s;
+  transition: width 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .logo-container {
@@ -89,7 +89,7 @@ const menues: MenuItem[] = [
 
 .menu-item {
   @apply flex gap-2.5 px-3.5 py-2.5 rounded-sm w-full;
-  transition: background-color 0.5s;
+  transition: background-color 0.5s ease-out;
   overflow-x: hidden;
 }
 
