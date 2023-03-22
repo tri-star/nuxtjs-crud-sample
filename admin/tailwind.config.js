@@ -1,4 +1,5 @@
 module.exports = {
+  srcDir: 'src/',
   content: [
     './pages/**/*.vue',
     './components/**/*.vue'

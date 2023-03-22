@@ -1,15 +1,10 @@
 {
+  "name": "nuxtjs-crud-sample",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "dev": "cd admin && yarn dev"
   },
-  "devDependencies": {
-    "@nuxtjs/tailwindcss": "^6.4.1",
-    "nuxt": "^3.2.3"
-  },
-  "dependencies": {}
+  "workspaces": [
+    "./admin"
+  ]
 }
