@@ -2,9 +2,30 @@
   "name": "nuxtjs-crud-sample",
   "private": true,
   "scripts": {
-    "dev": "cd admin && yarn dev"
+    "dev": "cd admin && yarn dev",
+    "build": "cd admin && yarn build",
+    "lint": "eslint --fix --ext .js,.ts.vue .",
+    "format": "prettier --write \"**/*.+(js|ts|json|md|vue)\"",
+    "lint-format": "yarn lint && yarn format"
   },
   "workspaces": [
     "./admin"
-  ]
+  ],
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tri-star/nuxtjs-crud-sample.git",
+  "author": "tristar <tristar.2nd@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.7"
+  },
+  "dependencies": {
+    "@nuxtjs/eslint-config": "^12.0.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "typescript": "^5.0.2"
+  }
 }
