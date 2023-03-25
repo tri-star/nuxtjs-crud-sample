@@ -7,12 +7,10 @@
         <slot />
       </main>
     </div>
-
   </div>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <style scoped>
 .header-main-container {

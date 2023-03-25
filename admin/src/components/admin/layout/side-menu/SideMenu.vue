@@ -1,42 +1,38 @@
 <script setup lang="ts">
-
 const expanded = useState('expanded', () => true)
 
 const handleToggleClick = () => {
   expanded.value = !expanded.value
 }
 
-
 type MenuItem = {
-  name: string,
-  icon: string,
-  title: string,
-  link: string,
+  name: string
+  icon: string
+  title: string
+  link: string
 }
 
 const menues: MenuItem[] = [
   {
-    name: "dashboard",
-    title: "ダッシュボード",
-    icon: "dashboard",
-    link: "/admin/dashboard",
+    name: 'dashboard',
+    title: 'ダッシュボード',
+    icon: 'dashboard',
+    link: '/admin/dashboard',
   },
   {
-    name: "contracts",
-    title: "契約管理",
-    icon: "corporate_fare",
-    link: "/admin/contracts",
+    name: 'contracts',
+    title: '契約管理',
+    icon: 'corporate_fare',
+    link: '/admin/contracts',
   },
   {
-    name: "contracts",
-    title: "ユーザー管理",
-    icon: "account_box",
-    link: "/admin/users",
-  }
-
+    name: 'contracts',
+    title: 'ユーザー管理',
+    icon: 'account_box',
+    link: '/admin/users',
+  },
 ]
 </script>
-
 
 <template>
   <aside :class="['side-menu', expanded ? 'w-[280px]' : 'w-[68px]']">
@@ -46,8 +42,6 @@ const menues: MenuItem[] = [
       <a class="toggle flex items-center" @click="handleToggleClick()">
         <span class="material-icons menu-icon">menu</span>
       </a>
-
-
     </div>
     <div class="bg-sidemenu-bg text-sidemenu-on h-full p-2.5">
       <ul class="flex flex-col gap-2.5">
@@ -58,12 +52,9 @@ const menues: MenuItem[] = [
           </NuxtLink>
         </li>
       </ul>
-
     </div>
-
   </aside>
 </template>
-
 
 <style scoped>
 .side-menu {

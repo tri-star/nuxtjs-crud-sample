@@ -1,6 +1,5 @@
-
 <script setup>
-import HeaderIcon from './HeaderIcon.vue';
+import HeaderIcon from './HeaderIcon.vue'
 </script>
 
 <template>

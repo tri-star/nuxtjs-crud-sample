@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const bgColors = {
   primary: 'bg-primary-main',
 } as const
@@ -8,28 +7,24 @@ const textColors = {
   primary: 'text-primary-on',
 } as const
 
-const icons = [
-  'add'
-] as const
+const icons = ['add'] as const
 
-const { text, color, icon } = withDefaults(defineProps<{
-  text: string,
-  color: keyof typeof bgColors,
-  icon?: keyof typeof icons,
-}>(), {
-  text: '',
-  color: 'primary',
-  icon: undefined,
-})
-
+const { text, color, icon } = withDefaults(
+  defineProps<{
+    text: string
+    color: keyof typeof bgColors
+    icon?: keyof typeof icons
+  }>(),
+  {
+    text: '',
+    color: 'primary',
+    icon: undefined,
+  }
+)
 </script>
 
 <template>
-  <button :class="[
-    'button',
-    bgColors[color],
-    textColors[color],
-  ]">
+  <button :class="['button', bgColors[color], textColors[color]]">
     <span class="material-icons" v-if="icon">{{ icon }}</span>
     <span>{{ text }}</span>
   </button>
@@ -52,7 +47,6 @@ const { text, color, icon } = withDefaults(defineProps<{
   background-color: color-mix(in srgb, theme('colors.primary.main'), white 8%);
   color: color-mix(in srgb, theme('colors.primary.on'), white 8%);
 }
-
 
 .button:active {
   transform: translateY(2px);

@@ -1,15 +1,14 @@
-
 <script setup lang="ts">
 useHead({
   title: 'Nuxt CRUD example',
-  meta: [
-    { name: 'description', content: 'My amazing site.' }
-  ],
+  meta: [{ name: 'description', content: 'My amazing site.' }],
   link: [
-    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
+    {
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/icon?family=Material+Icons',
+    },
   ],
-  bodyAttrs: {
-  },
+  bodyAttrs: {},
 })
 </script>
 

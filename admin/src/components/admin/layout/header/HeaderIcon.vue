@@ -1,9 +1,7 @@
 <script setup lang="ts">
-
 const { icon } = defineProps<{
   icon: string
 }>()
-
 </script>
 
 <template>
@@ -36,6 +34,5 @@ span {
   font-size: 32px;
   width: 32px;
   height: 32px;
-
 }
 </style>
