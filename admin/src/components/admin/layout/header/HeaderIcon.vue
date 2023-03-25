@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { reactive } from 'vue'
+
 const { icon } = defineProps<{
   icon: string
 }>()
@@ -6,9 +8,9 @@ const { icon } = defineProps<{
 
 <template>
   <div>
-    <NuxtLink class="link" href="#">
+    <!-- <NuxtLink class="link" href="#">
       <span class="material-icons">{{ icon }}</span>
-    </NuxtLink>
+    </NuxtLink> -->
   </div>
 </template>
 

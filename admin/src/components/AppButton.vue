@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { reactive } from 'vue'
+
 const bgColors = {
   primary: 'bg-primary-main',
 } as const
@@ -25,7 +27,7 @@ const { text, color, icon } = withDefaults(
 
 <template>
   <button :class="['button', bgColors[color], textColors[color]]">
-    <span class="material-icons" v-if="icon">{{ icon }}</span>
+    <span v-if="icon" class="material-icons">{{ icon }}</span>
     <span>{{ text }}</span>
   </button>
 </template>

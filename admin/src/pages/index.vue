@@ -3,5 +3,5 @@ const value = useValue()
 </script>
 
 <template>
-  {{ value }}
+  <p>{{ value }}</p>
 </template>

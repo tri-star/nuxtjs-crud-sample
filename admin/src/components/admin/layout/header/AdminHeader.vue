@@ -1,10 +1,11 @@
 <script setup>
 import HeaderIcon from './HeaderIcon.vue'
+import AppSpacer from '~~/src/components/AppSpacer.vue'
 </script>
 
 <template>
   <header class="flex">
-    <Spacer />
+    <AppSpacer />
     <div class="menu-area">
       <HeaderIcon icon="notifications" />
       <HeaderIcon icon="account_circle" />

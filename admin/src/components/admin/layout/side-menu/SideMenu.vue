@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { useState } from '#app'
+import AppSpacer from '~~/src/components/AppSpacer.vue'
+
 const expanded = useState('expanded', () => true)
 
 const handleToggleClick = () => {
@@ -37,8 +40,8 @@ const menues: MenuItem[] = [
 <template>
   <aside :class="['side-menu', expanded ? 'w-[280px]' : 'w-[68px]']">
     <div class="logo-container">
-      <h1 class="logo" v-show="expanded">ADMIN</h1>
-      <Spacer v-show="expanded" />
+      <h1 v-show="expanded" class="logo">ADMIN</h1>
+      <AppSpacer v-show="expanded" />
       <a class="toggle flex items-center" @click="handleToggleClick()">
         <span class="material-icons menu-icon">menu</span>
       </a>

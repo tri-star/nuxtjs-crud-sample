@@ -1,6 +1,8 @@
 <template>
-  <header>ヘッダー</header>
-  <main>
-    <slot />
-  </main>
+  <div>
+    <header>ヘッダー</header>
+    <main>
+      <slot />
+    </main>
+  </div>
 </template>

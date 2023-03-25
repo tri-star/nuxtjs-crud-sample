@@ -1,4 +1,6 @@
-<template></template>
+<template>
+  <p></p>
+</template>
 
 <script setup>
 definePageMeta({

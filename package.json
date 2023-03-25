@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "cd admin && yarn dev",
     "build": "cd admin && yarn build",
-    "lint": "eslint --fix --ext .js,.ts.vue .",
+    "lint": "eslint --fix --ext .js,.ts,.vue .",
     "format": "prettier --write \"**/*.+(js|ts|json|md|vue)\"",
     "lint-format": "yarn lint && yarn format"
   },
@@ -17,6 +17,7 @@
   "author": "tristar <tristar.2nd@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@typescript-eslint/eslint-plugin": "^5.56.0",
     "@typescript-eslint/parser": "^5.56.0",
     "eslint": "^8.36.0",

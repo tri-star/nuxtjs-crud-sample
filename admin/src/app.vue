@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useHead } from 'unhead'
+
 useHead({
   title: 'Nuxt CRUD example',
   meta: [{ name: 'description', content: 'My amazing site.' }],
