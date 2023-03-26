@@ -18,32 +18,43 @@ definePageMeta({
       </div>
 
       <AppTable>
-        <tr>
-          <th class="text-center mx-auto">
-            <AppCheckBox />
-          </th>
-          <th class="text-right">ID</th>
-          <th class="text-left">名前</th>
-          <th class="text-left">ログインID</th>
-          <th class="text-left">登録日時</th>
-          <th class="text-left">更新日時</th>
-        </tr>
-        <tr>
-          <td class="text-center mx-auto"><AppCheckBox /></td>
-          <td class="text-right">1</td>
-          <td>user1</td>
-          <td>USER_1</td>
-          <td>2023-01-01 00:00:00</td>
-          <td>2023-01-01 00:00:00</td>
-        </tr>
-        <tr>
-          <td class="text-center"><AppCheckBox /></td>
-          <td class="text-right">1</td>
-          <td>user1</td>
-          <td>USER_1</td>
-          <td>2023-01-01 00:00:00</td>
-          <td>2023-01-01 00:00:00</td>
-        </tr>
+        <thead>
+          <tr>
+            <th class="text-center mx-auto">
+              <AppCheckBox />
+            </th>
+            <th class="text-right">ID</th>
+            <th class="text-left">名前</th>
+            <th class="text-left">ログインID</th>
+            <th class="text-left">登録日時</th>
+            <th class="text-left">更新日時</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-center mx-auto"><AppCheckBox /></td>
+            <td class="text-right">1</td>
+            <td>user1</td>
+            <td>USER_1</td>
+            <td>2023-01-01 00:00:00</td>
+            <td>2023-01-01 00:00:00</td>
+          </tr>
+          <tr>
+            <td class="text-center"><AppCheckBox /></td>
+            <td class="text-right">1</td>
+            <td>user1</td>
+            <td>USER_1</td>
+            <td>2023-01-01 00:00:00</td>
+            <td>2023-01-01 00:00:00</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="6" class="text-left">
+              <span>全アイテム：ダウンロード</span>
+            </th>
+          </tr>
+        </tfoot>
       </AppTable>
     </AppCard>
   </div>

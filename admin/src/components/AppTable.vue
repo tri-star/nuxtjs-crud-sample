@@ -10,12 +10,20 @@
   padding: 10px;
 }
 
-:deep(th):nth-child(1) {
+:deep(thead th):nth-child(1) {
   @apply rounded-tl-sm;
 }
 
-:deep(th):nth-last-child(1) {
+:deep(thead th):nth-last-child(1) {
   @apply rounded-tr-sm;
+}
+
+:deep(tfoot th):nth-child(1) {
+  @apply rounded-bl-sm;
+}
+
+:deep(tfoot th):nth-last-child(1) {
+  @apply rounded-br-sm;
 }
 
 :deep(td) {
