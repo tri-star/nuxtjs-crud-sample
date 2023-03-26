@@ -1,7 +1,35 @@
+<script setup lang="ts">
+import { reactive } from 'vue'
+
+const props = withDefaults(
+  defineProps<{
+    checked: boolean
+  }>(),
+  {
+    checked: false,
+  }
+)
+
+const { checked } = reactive(props)
+
+const emits = defineEmits<{
+  (e: 'update:checked', checked: boolean): void
+}>()
+
+const handleChanged = (e: Event) => {
+  emits('update:checked', (e.target as HTMLInputElement).checked)
+}
+</script>
+
 <template>
   <div class="container">
     <label class="checkbox">
-      <input class="real-checkbox" type="checkbox" />
+      <input
+        class="real-checkbox"
+        type="checkbox"
+        :checked="checked"
+        @change="handleChanged($event)"
+      />
       <span class="check-mark">
         <i class="material-icons icon">check</i>
       </span>

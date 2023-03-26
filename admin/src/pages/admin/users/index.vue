@@ -1,6 +1,7 @@
 <script setup>
 import AppCard from '~~/src/components/admin/AppCard.vue'
 import PageTitle from '~/components/admin/PageTitle.vue'
+import AppCheckBox from '~~/src/components/AppCheckBox.vue'
 
 definePageMeta({
   layout: 'admin',
@@ -18,7 +19,9 @@ definePageMeta({
 
       <AppTable>
         <tr>
-          <th class="text-center"><input type="checkbox" /></th>
+          <th class="text-center mx-auto">
+            <AppCheckBox />
+          </th>
           <th class="text-right">ID</th>
           <th class="text-left">名前</th>
           <th class="text-left">ログインID</th>
@@ -26,7 +29,7 @@ definePageMeta({
           <th class="text-left">更新日時</th>
         </tr>
         <tr>
-          <td class="text-center"><input type="checkbox" /></td>
+          <td class="text-center mx-auto"><AppCheckBox /></td>
           <td class="text-right">1</td>
           <td>user1</td>
           <td>USER_1</td>
@@ -34,7 +37,7 @@ definePageMeta({
           <td>2023-01-01 00:00:00</td>
         </tr>
         <tr>
-          <td class="text-center"><input type="checkbox" /></td>
+          <td class="text-center"><AppCheckBox /></td>
           <td class="text-right">1</td>
           <td>user1</td>
           <td>USER_1</td>
