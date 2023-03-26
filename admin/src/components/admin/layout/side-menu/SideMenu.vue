@@ -48,7 +48,7 @@ const menues: MenuItem[] = [
     </div>
     <div class="bg-sidemenu-bg text-sidemenu-on h-full p-2.5">
       <ul class="flex flex-col gap-2.5">
-        <li v-for="menu in menues" class="w-full">
+        <li v-for="menu in menues" :key="menu.name" class="w-full">
           <NuxtLink class="menu-item" :href="menu.link">
             <span class="material-icons">{{ menu.icon }}</span>
             <p class="whitespace-nowrap w-full">{{ menu.title }}</p>

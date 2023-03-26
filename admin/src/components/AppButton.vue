@@ -11,7 +11,7 @@ const textColors = {
 
 const icons = ['add'] as const
 
-const { text, color, icon } = withDefaults(
+const props = withDefaults(
   defineProps<{
     text: string
     color: keyof typeof bgColors
@@ -23,6 +23,8 @@ const { text, color, icon } = withDefaults(
     icon: undefined,
   }
 )
+
+const { text, color, icon } = reactive(props)
 </script>
 
 <template>

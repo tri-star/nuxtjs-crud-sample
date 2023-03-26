@@ -1,16 +1,18 @@
 <script setup lang="ts">
 import { reactive } from 'vue'
 
-const { icon } = defineProps<{
+const props = defineProps<{
   icon: string
 }>()
+
+const { icon } = reactive(props)
 </script>
 
 <template>
   <div>
-    <!-- <NuxtLink class="link" href="#">
+    <NuxtLink class="link" href="#">
       <span class="material-icons">{{ icon }}</span>
-    </NuxtLink> -->
+    </NuxtLink>
   </div>
 </template>
 

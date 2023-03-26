@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { reactive } from 'vue'
 
-const { title } = defineProps<{
+const props = defineProps<{
   title: string
 }>()
+
+const { title } = reactive(props)
 </script>
 
 <template>
