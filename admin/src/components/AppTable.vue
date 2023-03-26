@@ -12,5 +12,6 @@
 
 :deep(td) {
   @apply border-b border-table-border bg-main-content-bg;
+  padding: 5px;
 }
 </style>
