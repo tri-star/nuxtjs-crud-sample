@@ -40,6 +40,7 @@ const { text, color, icon } = reactive(props)
   gap: 5px;
   box-shadow: theme('boxShadow.default');
   border-width: 1px;
+  transform: translateY(-2px);
   transition: all 0.2s ease-in-out;
 }
 
@@ -53,7 +54,7 @@ const { text, color, icon } = reactive(props)
 }
 
 .button:active {
-  transform: translateY(2px);
+  transform: translateY(0px);
   box-shadow: none;
 }
 </style>
