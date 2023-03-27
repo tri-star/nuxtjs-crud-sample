@@ -18,7 +18,7 @@ const icons = ['add'] as const
 const props = withDefaults(
   defineProps<{
     text: string
-    color: keyof typeof bgColors
+    color?: keyof typeof bgColors
     icon?: keyof typeof icons
   }>(),
   {

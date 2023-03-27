@@ -3,7 +3,7 @@ import { reactive } from 'vue'
 
 const props = withDefaults(
   defineProps<{
-    checked: boolean
+    checked?: boolean
   }>(),
   {
     checked: false,
