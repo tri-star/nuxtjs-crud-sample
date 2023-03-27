@@ -2,6 +2,7 @@
 import AppCard from '~~/src/components/admin/AppCard.vue'
 import PageTitle from '~/components/admin/PageTitle.vue'
 import AppCheckBox from '~~/src/components/AppCheckBox.vue'
+import InlineButton from '~~/src/components/InlineButton.vue'
 
 definePageMeta({
   layout: 'admin',
@@ -51,7 +52,10 @@ definePageMeta({
         <tfoot>
           <tr>
             <th colspan="6" class="text-left">
-              <span>全アイテム：ダウンロード</span>
+              <div class="flex items-center">
+                <p>全アイテム：</p>
+                <InlineButton icon="" text="ダウンロード" />
+              </div>
             </th>
           </tr>
         </tfoot>

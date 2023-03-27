@@ -50,7 +50,8 @@ module.exports = {
         border: '#d1d1d1',
       },
       transparent: {
-        hover: '#000000',
+        main: 'transparent',
+        hover: 'rgba(0, 0, 0, 0.05)',
         on: '#1f1f1f',
         alert: '#ff0000',
         alert01: '#ff0000',

@@ -34,6 +34,7 @@ div {
 }
 
 span {
+  transform: translateY(-2px);
   @apply drop-shadow-md text-header-on;
   font-size: 32px;
   width: 32px;
