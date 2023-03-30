@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import HeaderIcon from './HeaderIcon.vue'
 import AppSpacer from '~~/src/components/AppSpacer.vue'
 </script>

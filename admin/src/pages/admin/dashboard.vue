@@ -2,7 +2,7 @@
   <p>DASHBOARD</p>
 </template>
 
-<script setup>
+<script setup lang="ts">
 definePageMeta({
   layout: 'admin',
 })

@@ -9,13 +9,13 @@ const textColors = {
   primary: 'text-primary-on',
 } as const
 
-const icons = ['add'] as const
+type Icons = 'add'
 
 const props = withDefaults(
   defineProps<{
     text: string
     color: keyof typeof bgColors
-    icon?: keyof typeof icons
+    icon?: Icons
   }>(),
   {
     text: '',

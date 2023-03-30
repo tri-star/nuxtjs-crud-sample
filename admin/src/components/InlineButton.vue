@@ -13,13 +13,13 @@ const textColors = {
   transparent: 'text-transparent-on',
 } as const
 
-const icons = ['add'] as const
+type Icon = 'download'
 
 const props = withDefaults(
   defineProps<{
     text: string
     color?: keyof typeof bgColors
-    icon?: keyof typeof icons
+    icon?: Icon
   }>(),
   {
     text: '',

@@ -1,8 +1,9 @@
-<script setup>
+<script setup lang="ts">
 import AppCard from '~~/src/components/admin/AppCard.vue'
 import PageTitle from '~/components/admin/PageTitle.vue'
 import AppCheckBox from '~~/src/components/AppCheckBox.vue'
 import InlineButton from '~~/src/components/InlineButton.vue'
+import AppButton from '~~/src/components/AppButton.vue'
 
 definePageMeta({
   layout: 'admin',
