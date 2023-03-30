@@ -53,8 +53,8 @@ definePageMeta({
           <tr>
             <th colspan="6" class="text-left">
               <div class="flex items-center">
-                <p>全アイテム：</p>
-                <InlineButton icon="" text="ダウンロード" />
+                <p class="font-base">全アイテム：</p>
+                <InlineButton icon="download" text="ダウンロード" />
               </div>
             </th>
           </tr>

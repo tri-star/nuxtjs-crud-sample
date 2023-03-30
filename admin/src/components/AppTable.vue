@@ -5,9 +5,14 @@
 </template>
 
 <style scoped>
-:deep(th) {
+:deep(thead th) {
   @apply bg-plain-shade02 border-table-border;
   padding: 10px;
+}
+
+:deep(tfoot th) {
+  @apply bg-plain-shade02 border-table-border;
+  padding: 5px 10px;
 }
 
 :deep(thead th):nth-child(1) {

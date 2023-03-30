@@ -42,7 +42,7 @@ const { text, color, icon } = reactive(props)
 
 <style scoped>
 .button {
-  @apply px-4 py-1 rounded-xs flex justify-evenly;
+  @apply px-4 py-1 rounded-xs flex justify-evenly text-base font-button;
   gap: 5px;
   transition: all 0.2s ease-in-out;
 }
