@@ -17,7 +17,7 @@ module.exports = {
         buttonBorder: 'color-mix(in srgb, #5162ff, black 5%)',
       },
       header: {
-        main: '#a7b0ff',
+        main: '#a7b0ffA0',
         on: '#ffffff',
       },
       main: {
