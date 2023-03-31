@@ -15,7 +15,9 @@ import AppSpacer from '~~/src/components/AppSpacer.vue'
 
 <style scoped>
 header {
-  @apply bg-header-main text-header-on w-full drop-shadow-md;
+  @apply text-header-on w-full drop-shadow-md;
+  background-color: theme('colors.header.main');
+  backdrop-filter: blur(10px);
   height: theme('header.height');
 }
 
