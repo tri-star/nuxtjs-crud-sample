@@ -3,5 +3,6 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.configPath": "prettier.config.js",
   "eslint.format.enable": true,
-  "eslint.workingDirectories": ["./admin"]
+  "eslint.workingDirectories": ["./admin"],
+  "css.lint.unknownAtRules": "ignore"
 }
