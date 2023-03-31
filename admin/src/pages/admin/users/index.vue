@@ -4,6 +4,7 @@ import PageTitle from '~/components/admin/PageTitle.vue'
 import AppCheckBox from '~~/src/components/AppCheckBox.vue'
 import InlineButton from '~~/src/components/InlineButton.vue'
 import AppButton from '~~/src/components/AppButton.vue'
+import AppPaginator from '~~/src/components/paginator/AppPaginator.vue'
 
 definePageMeta({
   layout: 'admin',
@@ -15,8 +16,13 @@ definePageMeta({
     <PageTitle title="ユーザー管理" />
     <AppCard class="h-full">
       <AdminSectionTitle title="検索結果" />
-      <div>
+
+      <div class="flex items-end">
         <AppButton icon="add" text="登録" color="primary" />
+        <AppSpacer />
+        <div class="flex justify-end">
+          <AppPaginator :current="1" :page-count="5" />
+        </div>
       </div>
 
       <AppTable>
